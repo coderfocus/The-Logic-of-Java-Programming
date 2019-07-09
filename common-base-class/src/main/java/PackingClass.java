@@ -24,7 +24,12 @@ public class PackingClass {
         float f4 = 0.1f *0.1f;
         System.out.println(f3 == f4);//false
 
-
+        //不可变性
+        Integer a1 = 100;
+        Integer b1 = a1;
+        System.out.println(b1);
+        a1 = 50;
+        System.out.println(b1);
 
     }
 }
