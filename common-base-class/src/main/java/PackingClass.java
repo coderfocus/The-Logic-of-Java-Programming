@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.Locale;
 import java.util.TimeZone;
 
 //包装类
@@ -78,6 +79,8 @@ public class PackingClass {
         TimeZone timeZone = TimeZone.getTimeZone("GMT+08:00");
         System.out.println(timeZone.getID());
 
-
+        //国家和语言
+        Locale locale = Locale.getDefault();
+        System.out.println(locale.toString());
     }
 }
