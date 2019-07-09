@@ -11,6 +11,19 @@ public class PackingClass {
         Integer a = 100;
         int b = a;
 
+        //equals
+        Long l1 = 1000L;
+        boolean isEqual = l1.equals(1000L);//true
+        isEqual = l1.equals(1000);//false
+
+        Float f1 = 0.01f;
+        Float f2 = 0.1f *0.1f;
+        System.out.println(f1.equals(f2));//false
+        System.out.println(f1 == f2);//false
+        float f3 = 0.01f;
+        float f4 = 0.1f *0.1f;
+        System.out.println(f3 == f4);//false
+
 
 
     }
