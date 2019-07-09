@@ -1,3 +1,5 @@
+import java.util.Date;
+
 //包装类
 public class PackingClass {
     public static void forExample(){
@@ -54,6 +56,17 @@ public class PackingClass {
         String str = null;
         stringBuilder.append(str);
         System.out.println(stringBuilder.toString());
+
+        //表示时刻 绝对时间
+        Date now = new Date();
+        Date now1 = new Date();
+        //返回毫秒数
+        long timeMillis = now.getTime();
+        long timeMillis1 = now1.getTime();
+
+        int result = now.compareTo(now1);
+        boolean before = now.before(now1);
+        boolean after = now.after(now1);
 
     }
 }
