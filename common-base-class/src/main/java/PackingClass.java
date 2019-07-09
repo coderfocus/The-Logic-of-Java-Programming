@@ -47,5 +47,13 @@ public class PackingClass {
         String name4 = new String("coderfocus");
         System.out.println(name3 == name4);//false
         System.out.println(name3.equals(name4));//true
+
+
+        //字符串拼接
+        StringBuilder stringBuilder = new StringBuilder();
+        String str = null;
+        stringBuilder.append(str);
+        System.out.println(stringBuilder.toString());
+
     }
 }
