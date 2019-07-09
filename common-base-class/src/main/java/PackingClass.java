@@ -37,6 +37,15 @@ public class PackingClass {
         s1 = "focus";
         System.out.println(s2);
 
+        //字符串常量池
+        String name1 = "coderfocus";
+        String name2 = "coderfocus";
+        System.out.println(name1 == name2);//true
+        System.out.println(name1.equals(name2));//true
 
+        String name3 = new String("coderfocus");
+        String name4 = new String("coderfocus");
+        System.out.println(name3 == name4);//false
+        System.out.println(name3.equals(name4));//true
     }
 }
