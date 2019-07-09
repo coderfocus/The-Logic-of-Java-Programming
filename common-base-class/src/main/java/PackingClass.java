@@ -31,5 +31,12 @@ public class PackingClass {
         a1 = 50;
         System.out.println(b1);
 
+        String s1 ="coder";
+        String s2 = s1;
+        System.out.println(s2);
+        s1 = "focus";
+        System.out.println(s2);
+
+
     }
 }
