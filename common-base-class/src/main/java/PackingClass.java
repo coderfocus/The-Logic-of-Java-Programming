@@ -1,3 +1,5 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -84,7 +86,7 @@ public class PackingClass {
         Locale locale = Locale.getDefault();
         System.out.println(locale.toString());
 
-        //
+        //年历
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
         Date calendarDate = calendar.getTime();
@@ -100,5 +102,15 @@ public class PackingClass {
         System.out.println("second: " + calendar.get(Calendar.SECOND));
         System.out.println("millisecond: " + calendar.get(Calendar.MILLISECOND));
         System.out.println("day_of_week: " + calendar.get(Calendar.DAY_OF_WEEK));
+
+        //时间格式化
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateStr = sdf.format(Calendar.getInstance().getTime());
+        System.out.println(dateStr);
+        try{
+            Date date = sdf.parse(dateStr);
+        }catch (ParseException e){
+            e.printStackTrace();
+        }
     }
 }
