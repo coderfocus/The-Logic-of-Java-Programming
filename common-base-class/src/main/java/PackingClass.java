@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.TimeZone;
 
 //包装类
 public class PackingClass {
@@ -67,6 +68,16 @@ public class PackingClass {
         int result = now.compareTo(now1);
         boolean before = now.before(now1);
         boolean after = now.after(now1);
+
+        //时区
+        TimeZone tz = TimeZone.getDefault();
+        System.out.println(tz.getID());
+        //系统属性
+        System.out.println(System.getProperty("user.timezone"));
+
+        TimeZone timeZone = TimeZone.getTimeZone("GMT+08:00");
+        System.out.println(timeZone.getID());
+
 
     }
 }
