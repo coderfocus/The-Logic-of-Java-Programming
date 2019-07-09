@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
@@ -82,5 +83,22 @@ public class PackingClass {
         //国家和语言
         Locale locale = Locale.getDefault();
         System.out.println(locale.toString());
+
+        //
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
+        Date calendarDate = calendar.getTime();
+
+        calendar.set(Calendar.YEAR,2020);
+        calendar.add(Calendar.MINUTE,20);
+        calendar.add(Calendar.HOUR_OF_DAY,-1);
+        System.out.println("year: " + calendar.get(Calendar.YEAR));
+        System.out.println("month: " + calendar.get(Calendar.MONTH));
+        System.out.println("day: " + calendar.get(Calendar.DAY_OF_MONTH));
+        System.out.println("hour: " + calendar.get(Calendar.HOUR_OF_DAY));
+        System.out.println("minute: " + calendar.get(Calendar.MINUTE));
+        System.out.println("second: " + calendar.get(Calendar.SECOND));
+        System.out.println("millisecond: " + calendar.get(Calendar.MILLISECOND));
+        System.out.println("day_of_week: " + calendar.get(Calendar.DAY_OF_WEEK));
     }
 }
