@@ -1,9 +1,6 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
-import java.util.TimeZone;
+import java.util.*;
 
 //包装类
 public class PackingClass {
@@ -112,5 +109,13 @@ public class PackingClass {
         }catch (ParseException e){
             e.printStackTrace();
         }
+
+        //指定种子实现可重复的随机
+        Random random = new Random(2019);
+        for (int i = 0;i<5;i++){
+            System.out.println(random.nextInt(100)+ " ");
+        }
+
+
     }
 }
