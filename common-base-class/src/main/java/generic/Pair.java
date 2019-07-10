@@ -1,6 +1,6 @@
 package generic;
 
-public class Pair<T> {
+public class Pair<T> implements IPair<String>{
     T first;
     T second;
 
@@ -17,4 +17,8 @@ public class Pair<T> {
         return second;
     }
 
+    @Override
+    public void print(String obj) {
+        System.out.println(obj);
+    }
 }
