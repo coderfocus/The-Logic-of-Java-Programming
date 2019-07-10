@@ -1,5 +1,9 @@
 package generic;
 
+/**
+ * 泛型类
+ * @param <T>
+ */
 public class Pair<T> implements IPair<String>{
     T first;
     T second;
