@@ -2,6 +2,8 @@ import generic.NumberPair;
 import generic.Pair;
 import generic.UVPair;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args){
         PackingClass.forExample();
@@ -23,6 +25,9 @@ public class Main {
         double sum = numberPair.sum();
         System.out.println(sum);
 
+        Integer[] arr = {1,2,3,4,5};
+        int arrMax = numberPair.max(arr);
+        System.out.println(arrMax);
 
     }
 }
