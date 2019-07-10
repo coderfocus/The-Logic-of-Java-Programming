@@ -8,7 +8,15 @@ public class DynamicArray<E> {
      * @param c
      * @param <T>
      */
-    public <T extends E> void addAll(DynamicArray<T> c){
+//    public <T extends E> void addAll(DynamicArray<T> c){
+//
+//    }
+
+    /**
+     * 通配符
+     * @param c
+     */
+    public void addAll(DynamicArray<? extends E> c){
 
     }
 }

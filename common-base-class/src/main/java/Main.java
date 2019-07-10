@@ -37,5 +37,9 @@ public class Main {
         DynamicArray<Integer> integerDynamicArray = new DynamicArray<>();
         numberDynamicArray.addAll(integerDynamicArray);
 
+//        不知道具体类型，如果允许写入，就无法保证类型安全
+//        DynamicArray<? extends Number> dynamicArray = new DynamicArray<>();
+//        dynamicArray.addAll(integerDynamicArray);
+
     }
 }
