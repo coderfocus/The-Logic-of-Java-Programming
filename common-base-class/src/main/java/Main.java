@@ -1,3 +1,4 @@
+import generic.DynamicArray;
 import generic.NumberPair;
 import generic.Pair;
 import generic.UVPair;
@@ -21,13 +22,20 @@ public class Main {
         Integer v = uvPair.getSecond();
         UVPair<Integer,Integer> integerUVPair = UVPair.makePair(100,200);
 
+        //参数类型限定-具体类
         NumberPair<Integer,Integer> numberPair = new NumberPair<Integer, Integer>(1,100);
         double sum = numberPair.sum();
         System.out.println(sum);
 
+        //参数类型限定-接口
         Integer[] arr = {1,2,3,4,5};
         int arrMax = numberPair.max(arr);
         System.out.println(arrMax);
+
+        //参数类型限定-其他类型
+        DynamicArray<Number> numberDynamicArray = new DynamicArray<>();
+        DynamicArray<Integer> integerDynamicArray = new DynamicArray<>();
+        numberDynamicArray.addAll(integerDynamicArray);
 
     }
 }
