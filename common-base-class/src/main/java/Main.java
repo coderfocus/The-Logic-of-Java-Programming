@@ -1,4 +1,5 @@
 import generic.Pair;
+import generic.UVPair;
 
 public class Main {
     public static void main(String[] args){
@@ -11,5 +12,9 @@ public class Main {
         Pair<Integer> integerPair = new Pair<>(1,100);
         int min = integerPair.getFirst();
         Integer max = integerPair.getSecond();
+
+        UVPair<String,Integer> uvPair = new UVPair<>("age",18);
+        String u = uvPair.getFirst();
+        Integer v = uvPair.getSecond();
     }
 }
