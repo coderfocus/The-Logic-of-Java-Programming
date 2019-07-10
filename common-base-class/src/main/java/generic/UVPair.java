@@ -15,4 +15,12 @@ public class UVPair<U,V> {
     public V getSecond(){
         return second;
     }
+
+    /**
+     * 泛型方法
+     */
+    public static <T,H> UVPair<T,H> makePair(T first,H second){
+        UVPair<T,H> pair = new UVPair<>(first,second);
+        return pair;
+    }
 }

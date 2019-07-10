@@ -16,5 +16,7 @@ public class Main {
         UVPair<String,Integer> uvPair = new UVPair<>("age",18);
         String u = uvPair.getFirst();
         Integer v = uvPair.getSecond();
+
+        UVPair<Integer,Integer> integerUVPair = UVPair.makePair(100,200);
     }
 }
