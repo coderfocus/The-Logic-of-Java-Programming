@@ -59,7 +59,25 @@ public class ArrayListDemo {
         queue.offer("b");
         queue.offer("c");
         while(queue.peek()!=null){
-            System.out.println(queue.poll());
+            System.out.println(queue.poll()); //a b c
+        }
+    }
+
+
+    /** 
+    * @Description:  把LinkedList当做栈使用
+    * @param: []
+    * @return: void 
+    * @Author: songwenjie
+    * @Date: 2019/7/11 
+    */ 
+    public static void linkedListAsStack() {
+        Deque<String> stack = new LinkedList<>();
+        stack.push("a");
+        stack.push("b");
+        stack.push("c");
+        while (stack.peek() != null){
+            System.out.println(stack.pop());//c b a
         }
     }
 

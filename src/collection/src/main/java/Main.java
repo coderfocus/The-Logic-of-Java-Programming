@@ -3,5 +3,6 @@ public class Main {
         ArrayListDemo.removeItemWhenIterate();
         ArrayListDemo.asList();
         ArrayListDemo.linkedListAsQuene();
+        ArrayListDemo.linkedListAsStack();
     }
 }
