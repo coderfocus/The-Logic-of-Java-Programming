@@ -28,6 +28,26 @@ public class ArrayListDemo {
     }
 
 
+    /** 
+    * @Description: Arrays.asList内部使用的就是传入的参数数组，没有复制，也不会动态改变大小 
+    * @param: []
+    * @return: void 
+    * @Author: songwenjie
+    * @Date: 2019/7/11 
+    */ 
+    public static void asList(){
+        //Arrays.asList内部使用的就是传入的参数数组，没有复制，也不会动态改变大小
+        //不支持做add remove操作
+        //可以使用List<String> list = new ArrayList<>(arr);恢复完整的方法
+        String[] arr = {"coder","focus","good"};
+        List<String> list1 = Arrays.asList(arr);
+        System.out.println(list1.toString());
+        arr[2] = null;
+        System.out.println(list1.toString());
+        list1.set(2,"good");
+        System.out.println(list1.toString());
+        //list1.add("good"); //UnsupportedOperationException
+    }
 
 
 
