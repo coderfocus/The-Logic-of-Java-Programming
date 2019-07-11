@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ArrayListDemo {
 
@@ -29,7 +26,7 @@ public class ArrayListDemo {
 
 
     /** 
-    * @Description: Arrays.asList内部使用的就是传入的参数数组，没有复制，也不会动态改变大小 
+    * @Description: Arrays.asList内部使用的就是传入的参数数组，没有复制，也不会动态改变大小
     * @param: []
     * @return: void 
     * @Author: songwenjie
@@ -49,6 +46,22 @@ public class ArrayListDemo {
         //list1.add("good"); //UnsupportedOperationException
     }
 
+    /** 
+    * @Description: 把LinkedList当做队列使用
+    * @param: []
+    * @return: void 
+    * @Author: songwenjie
+    * @Date: 2019/7/11 
+    */ 
+    public static void linkedListAsQuene(){
+        Queue<String> queue = new LinkedList<>();
+        queue.offer("a");
+        queue.offer("b");
+        queue.offer("c");
+        while(queue.peek()!=null){
+            System.out.println(queue.poll());
+        }
+    }
 
 
 
