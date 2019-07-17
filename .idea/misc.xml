@@ -8,6 +8,7 @@
       <list>
         <option value="$PROJECT_DIR$/collection/pom.xml" />
         <option value="$PROJECT_DIR$/commonbaseclass/pom.xml" />
+        <option value="$PROJECT_DIR$/enum/pom.xml" />
       </list>
     </option>
   </component>

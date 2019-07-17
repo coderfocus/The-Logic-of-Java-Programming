@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="collection" />
         <module name="commonbaseclass" />
+        <module name="enum" />
+        <module name="collection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="collection" target="8" />
       <module name="commonbaseclass" target="8" />
+      <module name="enum" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
